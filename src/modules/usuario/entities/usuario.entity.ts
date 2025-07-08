@@ -9,6 +9,6 @@ export class Usuario {
   @Column()
   nombre: string;
 
-  @OneToMany(() => Pedido, pedido => pedido.usuario)
+  @OneToMany(() => Pedido, (pedido) => pedido.usuario)
   pedidos: Pedido[];
 }
